@@ -5,10 +5,14 @@ class Assignment6 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          border:Border.all(color: Colors.black,width: 20)
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+            border:Border.all(color: Colors.black,)
 
+          ),
         ),
       ),
     );
