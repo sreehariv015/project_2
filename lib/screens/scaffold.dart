@@ -29,7 +29,7 @@ class Scaffold1 extends StatelessWidget {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       drawer: Drawer(
-        child: Text("SreeHari",style: TextStyle(
+        child: Text("Sreehari",style: TextStyle(
           letterSpacing: 2,
           wordSpacing: 5,
           fontStyle: FontStyle.italic,
