@@ -10,7 +10,7 @@ class Question10 extends StatelessWidget {
           TextField(
            decoration: InputDecoration(
              icon: Icon(Icons.home)
-                 bord
+
            ),
           )
         ],
