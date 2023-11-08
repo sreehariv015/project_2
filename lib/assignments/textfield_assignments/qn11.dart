@@ -4,8 +4,25 @@ class Question11 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return  Scaffold(body: Column(
+       children: [
+         TextField(
+           decoration: InputDecoration(
+             prefix: const Text("left",
+             style: TextStyle(
+               color: Colors.black,
+             ),),
+             suffix: const Text("Right",style: TextStyle(
+               color: Colors.black
+             ),),
+             border: OutlineInputBorder(
+               borderRadius: BorderRadius.circular(23)
+             )
 
+           ),
+         )
+       ],
+    ),
     );
   }
 }

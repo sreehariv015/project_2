@@ -6,11 +6,11 @@ class Question2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        child: TextField(
+        child: const TextField(
           decoration: InputDecoration(
-errorBorder: OutlineInputBorder(
-  borderSide: BorderSide(
-    color: Colors.blue
+              errorBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                  color: Colors.blue
   )
 )
           ),
