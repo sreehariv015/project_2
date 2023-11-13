@@ -10,6 +10,7 @@ import 'package:project_2/assignments/containers/qn6.dart';
 import 'package:project_2/assignments/containers/qn7.dart';
 import 'package:project_2/assignments/containers/qn8.dart';
 import 'package:project_2/assignments/containers/qn9.dart';
+import 'package:project_2/assignments/popup_Menus/popupmenu_1.dart';
 import 'package:project_2/assignments/textfield_assignments/qn1.dart';
 import 'package:project_2/assignments/textfield_assignments/qn10.dart';
 import 'package:project_2/assignments/textfield_assignments/qn11.dart';
@@ -21,6 +22,8 @@ import 'package:project_2/assignments/textfield_assignments/qn6.dart';
 import 'package:project_2/assignments/textfield_assignments/qn7.dart';
 import 'package:project_2/assignments/textfield_assignments/qn8.dart';
 import 'package:project_2/assignments/textfield_assignments/qn9.dart';
+import 'package:project_2/checkbox/checkbox_sample.dart';
+import 'package:project_2/gestures/gestures1.dart';
 import 'package:project_2/icons_images/icon_images.1.dart';
 import 'package:project_2/icons_images/images.1.dart';
 import 'package:project_2/list_view/list_view_examples/example.list1.dart';
@@ -28,6 +31,7 @@ import 'package:project_2/list_view/list_view_examples/example.list2.dart';
 import 'package:project_2/list_view/list_view_examples/list1.dart';
 import 'package:project_2/list_view/list_view_examples/list_1.dart';
 import 'package:project_2/list_view/list_view_examples/list_2.dart';
+import 'package:project_2/menusample/menu.1.dart';
 import 'package:project_2/screens/Task.dart';
 import 'package:project_2/screens/container1.dart';
 import 'package:project_2/screens/container2.dart';
@@ -50,6 +54,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(home: Img12());
+    return  MaterialApp(home: Pop1(),);
+    }
+    //debugShowCheckedModeBanner: false,);
   }
-}
+
