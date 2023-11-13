@@ -7,11 +7,20 @@ class Qn1 extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(backgroundColor: Colors.purple,
         centerTitle: false,
-        title: const Text("Yoga Bliss"),
+        title: const Text("Yoga Bliss",
+        style: TextStyle(
+          fontWeight: FontWeight.bold,
+
+        ),),
       ),
      body:  Column(
        children: [
-         Padding(padding: EdgeInsets.all(8.0),
+         const Center(
+           heightFactor: 0.80,
+           child: Image(image: NetworkImage('https://static.vecteezy.com/system/resources/previews/000/626/599/original/yoga-health-logo-vector-template.jpg')),
+         ),
+         
+         Padding(padding: const EdgeInsets.all(8.0),
          child: TextField(
            decoration: InputDecoration(
              hintText: "Enter your email",
@@ -23,7 +32,7 @@ class Qn1 extends StatelessWidget {
            ),
          ),
          ),
-         Padding(padding: EdgeInsets.all(8.0),
+         Padding(padding: const EdgeInsets.all(8.0),
            child: TextField(
              decoration: InputDecoration(
                  hintText: "Enter your password",
@@ -35,19 +44,34 @@ class Qn1 extends StatelessWidget {
              ),
            ),
          ),
-         TextButton(onPressed: () {
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: TextButton(onPressed: () {
 
-         }, child: const Text("Forgot Password",style: TextStyle(
-           color: Colors.purple
-         ),)),
-         ElevatedButton(onPressed: () {
+           }, child: const Text("Forgot Password",style: TextStyle(
+             color: Colors.purple
+           ),)),
+         ),
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: Container(
+             color: Colors.purple,
+             child: TextButton(onPressed: () {
 
-         }, child: Text("Login")),
-         TextButton(onPressed: () {
+             }, child: const Text("Login",style: TextStyle(
+               color: Colors.white
+             ),)),
+           ),
+         ),
+         Padding(
+           padding: const EdgeInsets.all(8.0),
+           child: TextButton(onPressed: () {
 
-         }, child: const Text("New user?",style: TextStyle(
-           color: Colors.purple,
-         ),))
+           }, child: const Text("New user? Create new account",style: TextStyle(
+             color: Colors.purple,
+           ),)
+           ),
+         ),
        ],
      ), 
     );
