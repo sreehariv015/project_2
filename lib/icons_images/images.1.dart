@@ -11,7 +11,7 @@ class _Img12State extends State<Img12> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Image(image: AssetImage('images/profile_pic.jpg')),
+        child: Image(image: AssetImage('assets/images/profile_pic.jpg')),
       ),
     );
   }

@@ -22,7 +22,11 @@ import 'package:project_2/assignments/textfield_assignments/qn6.dart';
 import 'package:project_2/assignments/textfield_assignments/qn7.dart';
 import 'package:project_2/assignments/textfield_assignments/qn8.dart';
 import 'package:project_2/assignments/textfield_assignments/qn9.dart';
+import 'package:project_2/checkbox/checkbox1.dart';
 import 'package:project_2/checkbox/checkbox_sample.dart';
+import 'package:project_2/dropdownbutton/drop1.dart';
+import 'package:project_2/formwidget/example1.dart';
+import 'package:project_2/formwidget/registration.dart';
 import 'package:project_2/gestures/gestures1.dart';
 import 'package:project_2/icons_images/icon_images.1.dart';
 import 'package:project_2/icons_images/images.1.dart';
@@ -44,7 +48,12 @@ import 'package:project_2/screens/textfield1.dart';
 import 'package:project_2/screens/textfield2.dart';
 import 'package:project_2/screens/textfield3.dart';
 import 'package:project_2/screens/textfield4.dart';
+import 'package:project_2/stack/example1.dart';
+import 'package:project_2/stack/example2.dart';
+import 'package:project_2/stack/example3.dart';
 import 'package:project_2/trash/ex.dart';
+import 'package:project_2/trash/formwidgetexample.dart';
+import 'package:project_2/url/url_examples/example1.dart';
 main(){
   runApp(MyApp());
 }
@@ -54,7 +63,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(home: Pop1(),);
+    return  MaterialApp(home:  UrlExample1(),);
     }
     //debugShowCheckedModeBanner: false,);
   }
