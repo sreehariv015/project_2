@@ -9,7 +9,7 @@ class IconSample1 extends StatefulWidget {
 class _IconSample1State extends State<IconSample1> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body: Column(
         children: [
           Icon(Icons.alarm,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_2/alert/alert1.dart';
 import 'package:project_2/assignments/assignments_level2/qn1.dart';
 import 'package:project_2/assignments/containers/qn14.dart';
 import 'package:project_2/assignments/containers/qn10.dart';
@@ -51,6 +52,9 @@ import 'package:project_2/screens/textfield4.dart';
 import 'package:project_2/stack/example1.dart';
 import 'package:project_2/stack/example2.dart';
 import 'package:project_2/stack/example3.dart';
+import 'package:project_2/switch_widget/example.dart';
+import 'package:project_2/switch_widget/switch1.dart';
+import 'package:project_2/switch_widget/switch2.dart';
 import 'package:project_2/trash/ex.dart';
 import 'package:project_2/trash/formwidgetexample.dart';
 import 'package:project_2/url/url_examples/example1.dart';
@@ -63,7 +67,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(home:  UrlExample1(),);
+    return  MaterialApp(home:  SwitchExample1(),);
     }
     //debugShowCheckedModeBanner: false,);
   }
