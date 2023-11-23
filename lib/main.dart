@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return  MaterialApp(
       theme: ThemeData(primarySwatch: Colors.red),
-      home: Qn2(),);
+      home: Qn30(),);
     }
     //debugShowCheckedModeBanner: false,);
   }

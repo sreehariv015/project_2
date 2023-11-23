@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-class Qn2 extends StatefulWidget {
-  const Qn2({super.key});
+class Qn31 extends StatefulWidget {
+  const Qn31({super.key});
 
   @override
-  State<Qn2> createState() => _Qn2State();
+  State<Qn31> createState() => _Qn2State();
 }
 
-class _Qn2State extends State<Qn2> {
+class _Qn2State extends State<Qn31> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,16 +19,15 @@ class _Qn2State extends State<Qn2> {
 
           ),),
       ),
-      backgroundColor: Colors.white,
       body:  SingleChildScrollView(
         child: Column(
           children: [
-            const SizedBox(height: 90,),
+            const SizedBox(height: 30,),
             const Center(
               heightFactor: 0.80,
-              child: Image(image: AssetImage('assets/images/yoga2.png')),
+              child: Image(image: AssetImage('assets/images/yoga.jpg')),
             ),
-            const SizedBox(height: 60,),
+            const SizedBox(height: 30,),
             Padding(padding: const EdgeInsets.all(8.0),
               child: TextFormField(
                 decoration: const InputDecoration(
@@ -45,7 +44,7 @@ class _Qn2State extends State<Qn2> {
             Padding(padding: const EdgeInsets.all(8.0),
               child: TextFormField(
                 decoration: const InputDecoration(
-                    hintText: "Enter your password",
+                    hintText: "Enter your new password",
                     label: Text("Password"),
                     border: OutlineInputBorder(
                         borderRadius: BorderRadius.zero
@@ -54,13 +53,18 @@ class _Qn2State extends State<Qn2> {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextButton(onPressed: () {
+            const SizedBox(height: 20,),
+            Padding(padding: const EdgeInsets.all(8.0),
+              child: TextFormField(
+                decoration: const InputDecoration(
+                    hintText: "Enter your new password",
+                    label: Text("Confirm Password"),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.zero
+                    )
 
-              }, child: const Text("Forgot Password",style: TextStyle(
-                //color: Colors.red
-              ),)),
+                ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -74,19 +78,10 @@ class _Qn2State extends State<Qn2> {
                 ),
                 child: TextButton(onPressed: () {
 
-                }, child: const Text("Login",style: TextStyle(
+                }, child: const Text("Save",style: TextStyle(
                     color: Colors.white,
                     fontSize: 20
                 ),)),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: TextButton(onPressed: () {
-
-              }, child: const Text("New user? Create new account",style: TextStyle(
-                //color: Colors.red,
-              ),)
               ),
             ),
           ],

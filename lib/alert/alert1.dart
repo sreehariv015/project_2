@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_2/assignments/assignments_level2/qn1.dart';
+import 'package:project_2/assignments/assignments_level2/qn3.0.dart';
 
 class Alert1 extends StatefulWidget {
   const Alert1({super.key});
@@ -21,7 +22,7 @@ class _Alert1State extends State<Alert1> {
                   setState(() {
                     Navigator.pop(context);
                     Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) {
-                      return Qn1();
+                      return Qn30();
                       },), (route) => false);
 
                     // Navigator.push(context, MaterialPageRoute(

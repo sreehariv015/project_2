@@ -57,11 +57,10 @@ class _Qn2State extends State<Qn30> {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextButton(onPressed: () {
-                Navigator.push(context, MaterialPageRoute(
-                     builder: (context) {
-                        return Qn31();
-                      },
-                ));
+                Navigator.pop(context);
+                Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context) {
+                  return Qn30();
+                },), (route) => false);
 
               }, child: const Text("Forgot Password",style: TextStyle(
                 //color: Colors.red
