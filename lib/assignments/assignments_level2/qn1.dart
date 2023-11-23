@@ -26,7 +26,7 @@ class _Qn2State extends State<Qn2> {
             const SizedBox(height: 90,),
             const Center(
               heightFactor: 0.80,
-              child: Image(image: AssetImage('assets/images/yoga2.png')),
+              child: Image(image: AssetImage('assets/images/yoga3.png')),
             ),
             const SizedBox(height: 60,),
             Padding(padding: const EdgeInsets.all(8.0),
@@ -89,6 +89,7 @@ class _Qn2State extends State<Qn2> {
               ),)
               ),
             ),
+
           ],
         ),
       ),
