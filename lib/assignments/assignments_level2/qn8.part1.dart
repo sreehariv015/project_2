@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-class Qn2 extends StatefulWidget {
-  const Qn2({super.key});
+import 'package:project_2/assignments/assignments_level2/qn8.part2.dart';
+class Qn81 extends StatefulWidget {
+  const Qn81({super.key});
 
   @override
-  State<Qn2> createState() => _Qn2State();
+  State<Qn81> createState() => _Qn2State();
 }
 
-class _Qn2State extends State<Qn2> {
-  bool passwordVisible=false;
-  var passwordController=TextEditingController();
+class _Qn2State extends State<Qn81> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +27,7 @@ class _Qn2State extends State<Qn2> {
             const SizedBox(height: 90,),
             const Center(
               heightFactor: 0.80,
-              child: Image(image: AssetImage('assets/images/yoga3.png')),
+              child: Image(image: AssetImage('assets/images/yoga2.png')),
             ),
             const SizedBox(height: 60,),
             Padding(padding: const EdgeInsets.all(8.0),
@@ -45,23 +44,16 @@ class _Qn2State extends State<Qn2> {
             ),
             const SizedBox(height: 20,),
             Padding(padding: const EdgeInsets.all(8.0),
-              child:TextFormField(
-                  controller: passwordController,
-                  obscureText: !passwordVisible,
-                  decoration: InputDecoration(
-                      border: const OutlineInputBorder(
-                          borderRadius:
-                          BorderRadius.all(Radius.circular(15))),
-                      hintText: "Password",
-                      suffixIcon: IconButton(
-                          onPressed: () {
-                            setState(() {
-                              passwordVisible = !passwordVisible;
-                            });
-                          },
-                          icon: Icon(passwordVisible
-                              ? Icons.visibility
-                              : Icons.visibility_off))))
+              child: TextFormField(
+                decoration: const InputDecoration(
+                    hintText: "Enter your password",
+                    label: Text("Password"),
+                    border: OutlineInputBorder(
+                        borderRadius: BorderRadius.zero
+                    )
+
+                ),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.all(8.0),
@@ -82,7 +74,9 @@ class _Qn2State extends State<Qn2> {
 
                 ),
                 child: TextButton(onPressed: () {
-
+                  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+                    return  Qn82();
+                  },));
                 }, child: const Text("Login",style: TextStyle(
                     color: Colors.white,
                     fontSize: 20
@@ -98,7 +92,6 @@ class _Qn2State extends State<Qn2> {
               ),)
               ),
             ),
-
           ],
         ),
       ),

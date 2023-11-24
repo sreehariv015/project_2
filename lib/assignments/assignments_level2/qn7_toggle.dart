@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Qt6 extends StatefulWidget {
-  const Qt6({super.key});
+class Qt17 extends StatefulWidget {
+  const Qt17({super.key});
 
   @override
-  State<Qt6> createState() => _Qt6State();
+  State<Qt17> createState() => _Qt6State();
 }
 
-class _Qt6State extends State<Qt6> {
+class _Qt6State extends State<Qt17> {
   bool passwordVisible = false;
   var passwordController = TextEditingController();
 
@@ -19,7 +19,7 @@ class _Qt6State extends State<Qt6> {
         ),
         body: ListView(
           children: [
-            const Image(image: AssetImage('assets/images/yogaRegister.jpg')),
+            const Image(image: AssetImage('assets/images/yoga.jpg')),
             const Padding(
               padding: EdgeInsets.all(15.0),
               child: TextField(
