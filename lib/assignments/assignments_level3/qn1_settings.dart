@@ -45,11 +45,11 @@ class _Settings1State extends State<Settings1> {
             child: Card(
               child: ListTile(
                 onTap: () {},
-                leading: const Icon(Icons.privacy_tip_outlined,
+                leading: const Icon(Icons.privacy_tip,
                   size: 30,
                   color: Color(0xFF4A4A5F),
                 ),
-                title: const Text("Privacy and policy",
+                title: const Text("Privacy Policy",
                   style: TextStyle(
                     fontSize: 19,
                   ),),
@@ -142,11 +142,11 @@ class _Settings1State extends State<Settings1> {
             child: Card(
               child: ListTile(
                 onTap: () {},
-                leading: const Icon(Icons.account_circle,
+                leading: const Icon(Icons.password,
                   size: 30,
                   color: Color(0xFF4A4A5F),
                 ),
-                title: const Text("Accounts",
+                title: const Text("Change password",
                   style: TextStyle(
                     fontSize: 19,
                   ),),
@@ -162,7 +162,23 @@ class _Settings1State extends State<Settings1> {
                   size: 30,
                   color: Color(0xFF4A4A5F),
                 ),
-                title: const Text("Accounts",
+                title: const Text("Delete Account",
+                  style: TextStyle(
+                    fontSize: 19,
+                  ),),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Card(
+              child: ListTile(
+                onTap: () {},
+                leading: const Icon(Icons.logout,
+                  size: 30,
+                  color: Color(0xFF4A4A5F),
+                ),
+                title: const Text("Log Out",
                   style: TextStyle(
                     fontSize: 19,
                   ),),
