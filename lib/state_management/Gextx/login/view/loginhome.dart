@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:project_2/state_management/Gextx/login/view/home.dart';
 import '../controller/logingetx.dart';
 
 class LoginHome extends StatefulWidget {
@@ -78,6 +79,9 @@ class _LoginHomeState extends State<LoginHome> {
                              setState(() {
                                if (_formKey.currentState!.validate()) {
                                  _loginController.handleLogin(_nameTextController.text, _emailTextController.text);
+
+                                 Get.to(Home());
+
                                }
                              });
                             },

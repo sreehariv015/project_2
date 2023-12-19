@@ -6,10 +6,7 @@ class LoginGetx extends GetxController {
   void handleLogin(String name, String email) {
     this.name.value = name;
     this.email.value = email;
-    Get.snackbar(
-      'Login Successful', // Title
-      'Name: $name\nEmail: $email', // Message
-    );
+
   }
 
 }

@@ -43,6 +43,11 @@ dependencies:
   speech_to_text: ^6.5.0
   flutter_tts: ^3.8.5
   get: ^4.6.6
+  provider: ^6.1.1
+  flutter_sensors: ^1.0.1
+  sensors_plus: ^4.0.2
+  camera: ^0.10.5+7
+  video_player: ^2.8.1
 
 dev_dependencies:
   flutter_test:
