@@ -9,6 +9,9 @@ import 'package:project_2/state_management/setstate/counterapp.dart';
 import 'package:project_2/trash/provider_sample/controller/controller.dart';
 import 'package:project_2/trash/provider_sample/view/counter_pdr.dart';
 import 'package:provider/provider.dart';
+
+import 'assignments/alaram/alaram.dart';
+import 'assignments/alaram/ex1.dart';
 main(){
   runApp(MyApp());
 }
@@ -26,7 +29,7 @@ class MyApp extends StatelessWidget {
         //theme: ThemeData(primarySwatch: Colors.red),
        // theme: ThemeData(primarySwatch: Colors.purple),
         debugShowCheckedModeBanner: false,
-        home: VideoSample1(),);
+        home:ExampleAlarmEditScreen() ,);
      // );
     }
     //debugShowCheckedModeBanner: false,);
